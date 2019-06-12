@@ -39,7 +39,7 @@ export type SearchResponse<T> = {
   total: number
 }
 
-export type FieldRenderer = (payload?: object) => React.ReactNode
+export type FieldRenderer = (payload?: object, getFieldDecorator?: any) => React.ReactNode
 
 export type RendererType = 'input' | 'select' | 'datePicker' | 'treeSelect'
 

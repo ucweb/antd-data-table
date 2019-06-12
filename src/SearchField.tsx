@@ -65,7 +65,7 @@ export class SearchField extends React.Component<ISearchFieldProps, ISearchField
       const renderComponent = () => {
         if (searchField.renderer) {
           // 自定义 renderer
-          return searchField.renderer(searchField.payload)
+          return searchField.renderer(searchField.payload, getFieldDecorator)
         } else {
           // 自带 renderer
           if (searchField.type) {
